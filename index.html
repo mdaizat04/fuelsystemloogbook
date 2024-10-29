@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRCRAFT FUEL SYSTEM</title>
+
+    <!-- Link to CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen">
+        <h1>AIRCRAFT FUEL SYSTEM</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" style="display:none;">
+        <!-- Header Section -->
+        <header>
+            <h1>FUEL SYSTEM LEARNING KIT LOGBOOK</h1>
+        </header>
+
+        <!-- Description Box -->
+        <section class="description-box">
+            <p>Fuel system learning kit is a product of a mini bowser that designed to perform refueling to a small aircraft. The product is completed with a fuel pump, fuel nozzle, oil drum, fuel cart and electrical equipment. The objective of this product development is to enhance understanding among students.</p>
+        </section>
+
+        <!-- Section for Photo and Video -->
+        <section class="media">
+            <div class="photo">
+                <img src="images/Politeknik Banting.png" alt="Politeknik" id="displayPhoto">
+            </div>
+            <div class="videos">
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/fuelvideos.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>FSLK Background</h3>
+                </div>
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/fuel2.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Cinematic Video</h3>
+                </div>
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/fuel3.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Demonstration</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="data-input">
+            <h2>Enter Your Information</h2>
+            <form id="dataForm" action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="designation">Designation:</label>
+                <select id="designation" name="designation" required>
+                    <option value="">Select Designation</option>
+                    <option value="Student">Student</option>
+                    <option value="Lecturer">Lecturer</option>
+                    <option value="Visitor">Visitor</option>
+                </select>
+
+                <label for="matrix" id="matrixLabel">Matrix Number:</label>
+                <input type="text" id="matrix" name="matrix">
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <!-- Dropdown for Department -->
+                <label for="department" id="departmentLabel">Department:</label>
+                <select id="department" name="department">
+                    <option value="">Select Department</option>
+                    <option value="JPP">JPP</option>
+                    <option value="JKM">JKM</option>
+                    <option value="JMSK">JMSK</option>
+                    <option value="JPA">JPA</option>
+                </select>
+
+                <!-- Dropdown for Class -->
+                <label for="class" id="classLabel">Class:</label>
+                <select id="class" name="class">
+                    <option value="">Select Class</option>
+                    <option value="DAM1">DAM1</option>
+                    <option value="DAM2">DAM2</option>
+                    <option value="DAM3">DAM3</option>
+                    <option value="DAM4">DAM4</option>
+                    <option value="DAM5">DAM5</option>
+                    <option value="DAM6">DAM6</option>
+                </select>
+
+                <!-- Dropdown for Company (initially hidden) -->
+                <label for="company" id="companyLabel" style="display:none;">Company:</label>
+                <input type="text" id="company" name="company" style="display:none;">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Safety Precautions Button -->
+        <section class="safety-section">
+            <button id="safetyButton" style="background-color: red; color: white;">Safety Precautions</button>
+        </section>
+
+        <!-- Group Members Section -->
+        <section class="group-members">
+            <h2>Our Team</h2>
+            <div class="member-container">
+                <div class="member">
+                    <img src="images/AMIEROL.jpg" alt="Amierol">
+                    <div class="member-name">Amierol</div>
+                </div>
+                <div class="member">
+                    <img src="images/AIZAT.jpg" alt="Aizat">
+                    <div class="member-name">Aizat</div>
+                </div>
+                <div class="member">
+                    <img src="images/AKMAL.jpg" alt="Akmal">
+                    <div class="member-name">Akmal</div>
+                </div>
+                <div class="member">
+                    <img src="images/NADIA.jpg" alt="Nadia">
+                    <div class="member-name">Nadia</div>
+                </div>
+                <div class="member">
+                    <img src="images/Mr.Aswad.jpg" alt="Mr.Aswad">
+                    <div class="member-name">MR.Aswad</div>
+                </div>
+                <div class="member">
+                    <img src="images/Mr.Salleh.jpg" alt="MR.Salleh">
+                    <div class="member-name">Mr.Salleh</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

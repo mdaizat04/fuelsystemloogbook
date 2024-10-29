@@ -1,0 +1,237 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/fc.jpg'); /* Change this to the name of your image */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the background image */
+    color: #333;
+    text-align: center;
+}
+
+/* Loading Screen */
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Section for Photo and Video */
+.media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.photo {
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 100%; /* Adjusts the width to fill the parent container */
+    max-width: 400px; /* Sets a maximum width */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    margin: 10px;
+    text-align: center;
+}
+
+.video-container video {
+    width: 300px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.video-container h3 {
+    margin-top: 10px;
+}
+
+/* Form Section */
+.data-input {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%; /* Adjusted to be more responsive */
+    max-width: 600px; /* Set a max-width for larger screens */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.data-input h2 {
+    margin-bottom: 20px;
+}
+
+.data-input label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.data-input input, .data-input select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Moving Text Animation */
+@keyframes moveText {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+#loadingScreen h1 {
+    animation: moveText 4s linear infinite; /* Adjusted duration */
+}
+
+/* Main Content Transition */
+#mainContent {
+    transition: opacity 1s ease;
+}
+
+/* Group Members Section */
+.group-members {
+    margin: 40px auto;
+    text-align: center; /* Center align the text */
+}
+
+.group-members h2 {
+    margin-bottom: 20px;
+}
+
+.member-container {
+    display: flex;
+    justify-content: center; /* Center the member container */
+    flex-wrap: wrap; /* Allow members to wrap on smaller screens */
+}
+
+.member {
+    margin: 15px; /* Space between members */
+}
+
+.member img {
+    width: 100px; /* Set width for circular photo */
+    height: 100px; /* Set height for circular photo */
+    border-radius: 50%; /* Make the photo circular */
+    border: 2px solid #007bff; /* Optional: border color */
+}
+
+/* Member Name Styling */
+.member-name {
+    background-color: white; /* White background for names */
+    padding: 5px; /* Padding around the name */
+    border-radius: 5px; /* Rounded corners for the name background */
+    margin-top: 5px; /* Space between image and name */
+    display: inline-block; /* Keep the background tight around the text */
+}
+
+/* Description Box Styling */
+.description-box {
+    background-color: white; /* White background for the description box */
+    padding: 20px;
+    margin: 20px auto; /* Center the description box */
+    width: 80%; /* Width of the description box */
+    max-width: 600px; /* Max width for larger screens */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Slight shadow for depth */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Smaller header text for tablets */
+    }
+
+    .data-input {
+        width: 90%; /* Full width on smaller devices */
+    }
+
+    .video-container video {
+        width: 90%; /* Full width for videos */
+    }
+
+    .member img {
+        width: 80px; /* Smaller images on mobile */
+        height: 80px; /* Maintain aspect ratio */
+    }
+
+    .member-name {
+        font-size: 0.9em; /* Slightly smaller text */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Smaller header text for mobile */
+    }
+
+    .data-input {
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    button {
+        padding: 8px 16px; /* Adjust button size */
+    }
+
+    .member img {
+        width: 60px; /* Even smaller images on mobile */
+        height: 60px; /* Maintain aspect ratio */
+    }
+}
