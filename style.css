@@ -235,3 +235,61 @@ button:hover {
         height: 60px; /* Maintain aspect ratio */
     }
 }
+/* General Information Section */
+.info-content {
+    background-color:gray; /* A softer gray for better contrast */
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 10px; /* Slightly increase border radius for a smoother look */
+    margin: 20px auto; /* Center the section and add spacing around */
+    text-align: justify; /* Justify the text */
+    line-height: 1.6; /* Improve readability with increased line height */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Header Margins for Info Content */
+.info-content h2 {
+    margin-top: 30px; /* Increased gap above h2 */
+    margin-bottom: 10px; /* Gap below h2 */
+}
+
+.info-content h3 {
+    margin-top: 25px; /* Increased gap above h3 */
+    margin-bottom: 8px; /* Gap below h3 */
+}
+
+.info-content h4 {
+    margin-top: 15px; /* Increased gap above h4 */
+    margin-bottom: 5px; /* Gap below h4 */
+}
+
+/* Back Button Styling */
+.back-button {
+    background-color:White; /* Primary color for the button */
+    color: black; /* White text for contrast */
+    border: 2px solid black; /* No border for a clean look */
+    padding: 12px 24px; /* Increased padding for a larger button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    display: inline-block; /* Allow width and height to be applied */
+    font-size: 1em; /* Consistent font size */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover for better visibility */
+}
+.qr-codes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-code-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the QR codes */
+}
+
+.qr-code img {
+    width: 150px; /* Adjust as necessary */
+    height: 150px; /* Ensure it's square */
+}
